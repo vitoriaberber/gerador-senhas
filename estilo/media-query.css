@@ -1,0 +1,16 @@
+@media screen and (width <= 600px) {
+    .principal {
+        width: 70vw;
+    }
+
+    .configuracoes__container {
+        width: auto;
+        flex-direction: column;
+    }
+}
+
+@media screen and (width <= 400px) {
+    .principal{
+        width: 90vw;
+    }
+}

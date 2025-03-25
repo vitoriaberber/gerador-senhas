@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="estilo/reset.css">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
+</head>
+<body>
+    <main class="principal">
+        <h1 class="principal__titulo">Gerador de Senhas</h1>
+        <div class="principal__senha">
+            <p class="senha"></p>
+            <img src="img/copy.svg" alt="Ícone de copiar texto" id="imgCopiar">
+        </div>
+        <form action="#" class="principal__formulario">
+            <div class="formulario__tamanho-senha">
+                <label for="caracteres" class="tamanho-senha__label">Tamanho da senha</label>
+                <input type="range" name="caracteres" id="caracteres" min="0" max="50" value="25" required class="tamanho-senha__input">
+                <span id="qtdCaracteres"></span>
+            </div>
+
+            <div class="formulario__configuracoes">
+                <p>Configurações da senha:</p>
+
+                <div class="configuracoes__container">
+                    <div>
+                        <label for="minus">Letras Minúsculas</label>
+                        <input type="checkbox" name="minus" id="minus" class="input-checkbox">
+                    </div>
+                    <div>
+                        <label for="maius">Letras Maiúsculas</label>
+                        <input type="checkbox" name="maius" id="maius" class="input-checkbox">
+                    </div>
+                    <div>
+                        <label for="num">Números</label>
+                        <input type="checkbox" name="num" id="num" class="input-checkbox">
+                    </div>
+                    
+                    <div>
+                        <label for="sim">Símbolos</label>
+                        <input type="checkbox" name="sim" id="sim" class="input-checkbox">
+                    </div>
+                </div>
+            </div>
+
+            <button class="formulario__botao">Gerar Senha</button>
+        </form>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
